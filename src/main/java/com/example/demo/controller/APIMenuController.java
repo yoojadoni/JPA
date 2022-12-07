@@ -36,24 +36,48 @@ public class APIMenuController {
         return ResponseEntity.ok().body(menuDTO);
     }
 
+    /**
+     * 메뉴 전체 조회
+     * @param pageable
+     * @return ResponseEntity MenuDTO
+     * @throws Exception
+     */
     @GetMapping("/menu")
     public ResponseEntity getMenuList(Pageable pageable) throws Exception {
         Page<MenuDTO> menuDTOPage = menuService.findAllWithPagealbeToDTO(pageable);
         return ResponseEntity.ok().body(menuDTOPage);
     }
 
+    /**
+     * 메뉴 생성
+     * @param menuDTO
+     * @return ResponseEntity MenuDTO
+     * @throws Exception
+     */
     @PostMapping("/menu")
     public ResponseEntity createMenu(@RequestBody MenuDTO menuDTO) throws Exception {
         MenuDTO menuDto = menuService.saveFromDto(menuDTO);
         return ResponseEntity.ok().body(menuDto);
     }
 
+    /**
+     * 메뉴 수정
+     * @param menuDTO
+     * @return ResponseEntity MenuDTO
+     * @throws Exception
+     */
     @PatchMapping("/menu")
     public ResponseEntity updateMenu(@RequestBody MenuDTO menuDTO) throws Exception {
         MenuDTO menuDto = menuService.updateMenuFromDto(menuDTO);
         return ResponseEntity.status(StatusCodeEnum.UPDATE_SUCCESS.getCode()).body(menuDTO);
     }
 
+    /**
+     * 메뉴 삭제
+     * @param id
+     * @return ResponseEntity
+     * @throws Exception
+     */
     @DeleteMapping("/menu/{id}")
     public ResponseEntity deleteMenu(@PathVariable Long id) throws Exception {
         menuService.deleteMenuFromDTO(id);
