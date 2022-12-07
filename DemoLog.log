@@ -1,0 +1,131 @@
+2022-12-06 22:22:40.863 INFO  639  --- [ restartedMain ] com.example.demo.DemoApplication - Starting DemoApplication using Java 1.8.0_333 on DESKTOP-4H259E7 with PID 4152 (D:\workspace\demo\demo\build\classes\java\main started by K in D:\workspace\demo\demo)
+2022-12-06 22:22:40.866 DEBUG 642  --- [ restartedMain ] com.example.demo.DemoApplication - Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-06 22:22:40.867 INFO  643  --- [ restartedMain ] com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-06 22:22:40.910 INFO  686  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-06 22:22:40.911 INFO  687  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-06 22:22:41.461 INFO  1237 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 22:22:41.462 INFO  1238 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-06 22:22:41.492 INFO  1268 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.MenuRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 22:22:41.496 INFO  1272 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrdersDetailRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 22:22:41.498 INFO  1274 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.OrdersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-12-06 22:22:41.499 INFO  1275 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 JDBC repository interfaces.
+2022-12-06 22:22:41.505 INFO  1281 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-06 22:22:41.506 INFO  1282 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-06 22:22:41.538 INFO  1314 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2022-12-06 22:22:42.830 INFO  2606 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-06 22:22:42.840 INFO  2616 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-06 22:22:42.840 INFO  2616 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-06 22:22:42.841 INFO  2617 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-06 22:22:42.929 INFO  2705 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-06 22:22:42.930 INFO  2706 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2018 ms
+2022-12-06 22:22:42.949 DEBUG 2725 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - Driver class org.h2.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@73d16e93
+2022-12-06 22:22:43.106 DEBUG 2882 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - autoCommit................................true
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - catalog................................none
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+2022-12-06 22:22:43.109 DEBUG 2885 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+2022-12-06 22:22:43.110 DEBUG 2886 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - dataSource................................none
+2022-12-06 22:22:43.110 DEBUG 2886 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+2022-12-06 22:22:43.110 DEBUG 2886 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+2022-12-06 22:22:43.111 DEBUG 2887 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=<masked>}
+2022-12-06 22:22:43.112 DEBUG 2888 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - driverClassName................................"org.h2.Driver"
+2022-12-06 22:22:43.112 DEBUG 2888 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+2022-12-06 22:22:43.113 DEBUG 2889 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+2022-12-06 22:22:43.113 DEBUG 2889 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+2022-12-06 22:22:43.113 DEBUG 2889 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+2022-12-06 22:22:43.113 DEBUG 2889 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+2022-12-06 22:22:43.113 DEBUG 2889 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:h2:mem:test
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+2022-12-06 22:22:43.114 DEBUG 2890 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+2022-12-06 22:22:43.115 DEBUG 2891 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - password................................<masked>
+2022-12-06 22:22:43.115 DEBUG 2891 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - poolName................................"HikariPool-1"
+2022-12-06 22:22:43.115 DEBUG 2891 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - readOnly................................false
+2022-12-06 22:22:43.115 DEBUG 2891 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - schema................................none
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - username................................"sa"
+2022-12-06 22:22:43.116 DEBUG 2892 --- [ restartedMain ] com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+2022-12-06 22:22:43.116 INFO  2892 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-06 22:22:43.340 DEBUG 3116 --- [ restartedMain ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.342 INFO  3118 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-06 22:22:43.359 INFO  3135 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2022-12-06 22:22:43.450 DEBUG 3226 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2022-12-06 22:22:43.451 DEBUG 3227 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.452 DEBUG 3228 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn2: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.453 DEBUG 3229 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn3: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.453 DEBUG 3229 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn4: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.454 DEBUG 3230 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn5: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.454 DEBUG 3230 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn6: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.454 DEBUG 3230 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn7: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.455 DEBUG 3231 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.455 DEBUG 3231 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn9: url=jdbc:h2:mem:test user=SA
+2022-12-06 22:22:43.455 DEBUG 3231 --- [ HikariPool-1 connection adder ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-12-06 22:22:43.529 DEBUG 3305 --- [ restartedMain ] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-12-06 22:22:44.863 INFO  4639 --- [ restartedMain ] p6spy - #1670332964863 | took 0ms | statement | connection 3| url jdbc:h2:mem:test
+drop table if exists menu CASCADE 
+drop table if exists menu CASCADE ;
+2022-12-06 22:22:44.864 INFO  4640 --- [ restartedMain ] p6spy - #1670332964864 | took 0ms | statement | connection 3| url jdbc:h2:mem:test
+drop table if exists orders CASCADE 
+drop table if exists orders CASCADE ;
+2022-12-06 22:22:44.864 INFO  4640 --- [ restartedMain ] p6spy - #1670332964864 | took 0ms | statement | connection 3| url jdbc:h2:mem:test
+drop table if exists ordersdetail CASCADE 
+drop table if exists ordersdetail CASCADE ;
+2022-12-06 22:22:44.864 INFO  4640 --- [ restartedMain ] p6spy - #1670332964864 | took 0ms | statement | connection 3| url jdbc:h2:mem:test
+drop sequence if exists hibernate_sequence
+drop sequence if exists hibernate_sequence;
+2022-12-06 22:22:44.868 INFO  4644 --- [ restartedMain ] p6spy - #1670332964868 | took 1ms | statement | connection 4| url jdbc:h2:mem:test
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+2022-12-06 22:22:44.875 INFO  4651 --- [ restartedMain ] p6spy - #1670332964875 | took 5ms | statement | connection 4| url jdbc:h2:mem:test
+create table menu (menu_id bigint not null, created_date timestamp, updated_date timestamp, image_url varchar(255), menu_name varchar(255), option varchar(255), price integer not null, use_yn boolean, primary key (menu_id))
+create table menu (menu_id bigint not null, created_date timestamp, updated_date timestamp, image_url varchar(255), menu_name varchar(255), option varchar(255), price integer not null, use_yn boolean, primary key (menu_id));
+2022-12-06 22:22:44.878 INFO  4654 --- [ restartedMain ] p6spy - #1670332964878 | took 3ms | statement | connection 4| url jdbc:h2:mem:test
+create table orders (order_id bigint generated by default as identity, created_date timestamp, updated_date timestamp, price integer not null, quantity integer not null, status varchar(255) default 'PaySuccess', primary key (order_id))
+create table orders (order_id bigint generated by default as identity, created_date timestamp, updated_date timestamp, price integer not null, quantity integer not null, status varchar(255) default 'PaySuccess', primary key (order_id));
+2022-12-06 22:22:44.879 INFO  4655 --- [ restartedMain ] p6spy - #1670332964879 | took 0ms | statement | connection 4| url jdbc:h2:mem:test
+create table ordersdetail (order_detail_id bigint generated by default as identity, amount integer not null, price integer not null, menu_id bigint, order_id bigint, primary key (order_detail_id))
+create table ordersdetail (order_detail_id bigint generated by default as identity, amount integer not null, price integer not null, menu_id bigint, order_id bigint, primary key (order_detail_id));
+2022-12-06 22:22:44.891 INFO  4667 --- [ restartedMain ] p6spy - #1670332964891 | took 12ms | statement | connection 4| url jdbc:h2:mem:test
+alter table ordersdetail add constraint FKk1tsirgpveq61pcpqcr6d7w8j foreign key (menu_id) references menu
+alter table ordersdetail add constraint FKk1tsirgpveq61pcpqcr6d7w8j foreign key (menu_id) references menu;
+2022-12-06 22:22:44.892 INFO  4668 --- [ restartedMain ] p6spy - #1670332964892 | took 0ms | statement | connection 4| url jdbc:h2:mem:test
+alter table ordersdetail add constraint FKn6k8apjsdlifnxco75gkks20q foreign key (order_id) references orders
+alter table ordersdetail add constraint FKn6k8apjsdlifnxco75gkks20q foreign key (order_id) references orders;
+2022-12-06 22:22:44.902 INFO  4678 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-06 22:22:45.559 WARN  5335 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-06 22:22:45.647 DEBUG 5423 --- [ restartedMain ] _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.c.APIMenuController:
+	{GET [/api/menu]}: getMenuList(Pageable)
+	{PATCH [/api/menu]}: updateMenu(MenuDTO)
+	{DELETE [/api/menu/{id}]}: deleteMenu(Long)
+	{GET [/api/menu/{id}]}: getMenu(Long)
+	{POST [/api/menu]}: createMenu(MenuDTO)
+2022-12-06 22:22:45.650 DEBUG 5426 --- [ restartedMain ] _.s.w.s.HandlerMapping.Mappings - 
+	c.e.d.c.APIOrderController:
+	{GET [/api/order/{id}]}: getOrder(Long)
+	{GET [/api/order]}: getOrderList(Pageable)
+	{DELETE [/api/order/{id}]}: deleteOrder(Long)
+	{POST [/api/order]}: createOrder(OrderDTO)
+	{PATCH [/api/order]}: updateOrder(OrderDTO)
+2022-12-06 22:22:45.657 DEBUG 5433 --- [ restartedMain ] _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-12-06 22:22:45.674 DEBUG 5450 --- [ restartedMain ] _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2022-12-06 22:22:45.694 DEBUG 5470 --- [ restartedMain ] _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/docs/**=ResourceHttpRequestHandler [classpath [static/docs/]], /img/**=ResourceHttpRequestHandler [URL [classpath:/static/img/]]}
+2022-12-06 22:22:46.625 INFO  6401 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-12-06 22:22:46.757 INFO  6533 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-06 22:22:46.818 INFO  6594 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06 22:22:46.832 INFO  6608 --- [ restartedMain ] com.example.demo.DemoApplication - Started DemoApplication in 6.308 seconds (JVM running for 6.835)
+2022-12-06 22:23:13.457 DEBUG 33233 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-12-06 22:23:13.457 DEBUG 33233 --- [ HikariPool-1 housekeeper ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
