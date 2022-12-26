@@ -59,11 +59,11 @@ endif::[]
 | DATA_NOT_EXISTS
 |===
 
-[[주문-API]]
+[[메뉴-API]]
 == Order API
 
-[[주문-전체조회]]
-=== 주문 전체 조회
+[[메뉴-전체조회]]
+=== 메뉴 전체 조회
 ==== 요청
 include::{snippets}/menu-getAll/http-request.adoc[]
 include::{snippets}/menu-getAll/request-body.adoc[]
@@ -73,8 +73,8 @@ include::{snippets}/menu-getAll/request-parameters.adoc[]
 include::{snippets}/menu-getAll/response-fields.adoc[]
 include::{snippets}/menu-getAll/http-response.adoc[]
 
-[[주문-조회]]
-=== 주문 일부 조회
+[[메뉴-조회]]
+=== 메뉴 일부 조회
 ==== 요청
 include::{snippets}/menu-get/http-request.adoc[]
 include::{snippets}/menu-get/path-parameters.adoc[]
@@ -83,8 +83,8 @@ include::{snippets}/menu-get/path-parameters.adoc[]
 include::{snippets}/menu-get/response-fields.adoc[]
 include::{snippets}/menu-get/http-response.adoc[]
 
-[[주문-생성]]
-=== 주문 생성
+[[메뉴-생성]]
+=== 메뉴 생성
 ==== 요청
 include::{snippets}/menu-create/http-request.adoc[]
 include::{snippets}/menu-create/request-fields.adoc[]
@@ -92,8 +92,8 @@ include::{snippets}/menu-create/request-fields.adoc[]
 include::{snippets}/menu-create/response-fields.adoc[]
 include::{snippets}/menu-create/http-response.adoc[]
 
-[[주문-수정]]
-=== 주문 수정
+[[메뉴-수정]]
+=== 메뉴 수정
 ==== 요청
 include::{snippets}/menu-update/http-request.adoc[]
 include::{snippets}/menu-update/request-fields.adoc[]
@@ -101,8 +101,8 @@ include::{snippets}/menu-update/request-fields.adoc[]
 include::{snippets}/menu-update/response-fields.adoc[]
 include::{snippets}/menu-update/http-response.adoc[]
 
-[[주문-삭제]]
-=== 주문 삭제
+[[메뉴-삭제]]
+=== 메뉴 삭제
 ==== 요청
 include::{snippets}/menu-delete/http-request.adoc[]
 include::{snippets}/menu-delete/path-parameters.adoc[]
