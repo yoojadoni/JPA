@@ -26,7 +26,7 @@ public class MessageService {
     @Autowired
     private FCMService fcmService;
     public void sendMessageToOwner(OwnerKafkaDTO ownerKafkaDTO){
-       /* try{
+        try{
             Shop shop = shopService.findShopById(ownerKafkaDTO.getOrderDTO().getShopId()).get();
             log.info(" owner id = {}, fcm = {}", shop.getOwner().getId(), shop.getOwner().getFcm());
             OrderStatusEnum status = ownerKafkaDTO.getOrderDTO().getStatus();
@@ -46,6 +46,6 @@ public class MessageService {
             fcmService.sendAsync(notificationDTO);
         }catch (Exception e){
             e.printStackTrace();
-        }*/
+        }
     }
 }

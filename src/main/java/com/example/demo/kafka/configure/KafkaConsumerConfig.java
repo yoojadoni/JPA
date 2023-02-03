@@ -20,7 +20,7 @@ import java.util.Map;
 @EnableKafka
 @Configuration
 public class KafkaConsumerConfig {
-/*
+
     @Value("#{system['kafka.consumer.bootstrap-servers']}")
     private String servers;
 
@@ -53,6 +53,6 @@ public class KafkaConsumerConfig {
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(OwnerConsumerFactory());
         return factory;
-    }*/
+    }
 }
 

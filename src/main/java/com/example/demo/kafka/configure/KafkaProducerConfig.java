@@ -18,7 +18,7 @@ import java.util.Map;
 //@EnableKafka
 @Configuration
 public class KafkaProducerConfig {
-/*    @Value("#{system['kafka.consumer.bootstrap-servers']}")
+    @Value("#{system['kafka.consumer.bootstrap-servers']}")
     private String servers;
 
     @Bean
@@ -33,5 +33,5 @@ public class KafkaProducerConfig {
     @Bean
     public KafkaTemplate<String, OwnerKafkaDTO> orderKafkaTemplate(){
         return new KafkaTemplate<>(producerFactory());
-    }*/
+    }
 }
