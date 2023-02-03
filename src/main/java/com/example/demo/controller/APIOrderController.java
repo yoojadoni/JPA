@@ -1,15 +1,12 @@
 package com.example.demo.controller;
 
 import com.example.demo.common.StatusCodeEnum;
-import com.example.demo.configure.exception.CustomException;
 import com.example.demo.dto.OrderDTO;
 import com.example.demo.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

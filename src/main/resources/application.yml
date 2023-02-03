@@ -38,8 +38,8 @@ spring:
       endable: true
       force: true
 
-#  resouces:
-#    static-locations: classpath:/resources/static/
+  #  resouces:
+  #    static-locations: classpath:/resources/static/
 
   devtools:
     livereload:

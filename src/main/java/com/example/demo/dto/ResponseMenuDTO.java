@@ -1,7 +1,7 @@
 package com.example.demo.dto;
 
-import com.example.demo.entity.Menu;
-import com.example.demo.entity.MenuOptionEnum;
+import com.example.demo.entity.menu.Menu;
+import com.example.demo.entity.menu.MenuOptionEnum;
 import lombok.*;
 
 @Data
@@ -40,10 +40,6 @@ public class ResponseMenuDTO {
             this.menuname = menu.getMenuName();
             this.price = menu.getPrice();
 
-            if(menu.getOption() != null) {
-
-                this.option = menu.getOption();
-            }
 
             if(menu.getImageurl() != null && !menu.getImageurl().equalsIgnoreCase("")) {
                 this.imageurl = menu.getImageurl();

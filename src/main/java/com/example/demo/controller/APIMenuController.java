@@ -2,8 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.common.StatusCodeEnum;
 import com.example.demo.dto.MenuDTO;
-import com.example.demo.dto.ResponseMenuDTO;
-import com.example.demo.entity.Menu;
 import com.example.demo.service.MenuService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

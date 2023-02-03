@@ -15,7 +15,8 @@ import java.util.List;
 public class OrderDetailDTO {
 
     public Long id;
-    public int price;
+
+    public Long price;
     public int amount;
     public Long menuId;
     public String menuName;

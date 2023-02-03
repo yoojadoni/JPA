@@ -22,14 +22,16 @@ public class BaseTimeEntity {
     private LocalDateTime createdDate;
 
     @LastModifiedDate
-    @Column(name = "updated_date")
+    @Column(name = "updated_date", updatable = true, insertable = false)
     @JsonFormat(pattern = "yyyyMMddHHmmss")
     private LocalDateTime updatedDate;
 
     @PrePersist
     public void setCreatedDate(){
         this.createdDate = LocalDateTime.now();
+        this.updatedDate = null;
     }
+
     @PreUpdate
     public void setUpdatedDate(){
         this.updatedDate = LocalDateTime.now();

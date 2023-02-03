@@ -13,6 +13,12 @@ endif::[]
 
 [[overview]]
 = 개요
+[[overview-other-page]]
+== 메인페이지
+link:main.html[]
+
+== 주문페이지
+link:order.html[]
 
 [[overview-http-verbs]]
 == HTTP 동사
@@ -60,11 +66,12 @@ endif::[]
 |===
 
 [[메뉴-API]]
-== Order API
+== Menu API
 
 [[메뉴-전체조회]]
 === 메뉴 전체 조회
 ==== 요청
+include::{snippets}/menu-getAll/curl-request.adoc[]
 include::{snippets}/menu-getAll/http-request.adoc[]
 include::{snippets}/menu-getAll/request-body.adoc[]
 include::{snippets}/menu-getAll/request-parameters.adoc[]
@@ -76,6 +83,7 @@ include::{snippets}/menu-getAll/http-response.adoc[]
 [[메뉴-조회]]
 === 메뉴 일부 조회
 ==== 요청
+include::{snippets}/menu-get/curl-request.adoc[]
 include::{snippets}/menu-get/http-request.adoc[]
 include::{snippets}/menu-get/path-parameters.adoc[]
 
@@ -86,6 +94,7 @@ include::{snippets}/menu-get/http-response.adoc[]
 [[메뉴-생성]]
 === 메뉴 생성
 ==== 요청
+include::{snippets}/menu-create/curl-request.adoc[]
 include::{snippets}/menu-create/http-request.adoc[]
 include::{snippets}/menu-create/request-fields.adoc[]
 ==== 응답
@@ -95,6 +104,7 @@ include::{snippets}/menu-create/http-response.adoc[]
 [[메뉴-수정]]
 === 메뉴 수정
 ==== 요청
+include::{snippets}/menu-update/curl-request.adoc[]
 include::{snippets}/menu-update/http-request.adoc[]
 include::{snippets}/menu-update/request-fields.adoc[]
 ==== 응답
@@ -104,6 +114,7 @@ include::{snippets}/menu-update/http-response.adoc[]
 [[메뉴-삭제]]
 === 메뉴 삭제
 ==== 요청
+include::{snippets}/menu-delete/curl-request.adoc[]
 include::{snippets}/menu-delete/http-request.adoc[]
 include::{snippets}/menu-delete/path-parameters.adoc[]
 

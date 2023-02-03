@@ -5,14 +5,18 @@ import com.example.demo.configure.exception.CustomException;
 import com.example.demo.common.StatusCodeEnum;
 import com.example.demo.common.util.ErrorResponse;
 import com.example.demo.common.util.Response;
+import com.example.demo.configure.jwt.TokenService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -25,6 +29,11 @@ import java.util.*;
 @Aspect
 @Component
 public class ApiAOP {
+    @Value("${jwt.token.header}")
+    private String header;
+
+    @Autowired
+    TokenService tokenService;
 
     @Pointcut("execution(* com.example.demo.controller.*.*(..))")
     public void controllerPointcut(){}
@@ -47,6 +56,7 @@ public class ApiAOP {
         // request 추출
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
         HttpServletRequest request = requestAttributes.getRequest();
+
 
         //API KEY 확인
 //        String apiKey = request.getHeader("apikey");

@@ -35,6 +35,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/img/**")
                 .addResourceLocations("classPath:/static/img/")
                 .setCachePeriod(10);
+        registry.addResourceHandler("/*-sw.js")
+                .addResourceLocations("classPath:/static/")
+                .setCachePeriod(100);
     }
 
 }
